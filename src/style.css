@@ -1,0 +1,12 @@
+h1,
+p {
+  font-family: Lato;
+}
+
+.border {
+  border: 2px solid black;
+  padding-left: 20px;
+  margin-top: 20px;
+  background-color: cornsilk;
+  border-radius: 12px;
+}
