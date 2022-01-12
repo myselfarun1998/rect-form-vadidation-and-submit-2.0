@@ -21,15 +21,13 @@ export default class App extends React.Component {
   onChange = (e) => {
     this.setState((prev) => {
       return {
-        ...prev, store: {
+        ...prev,
+        store: {
           ...prev.store,
           [e.target.name]: e.target.value,
         },
       };
     });
-
-
-    return { ...prev, show: { ...prev.store } };
     // this.setState({
     //   store: {
     //     [e.target.name]: e.target.value,
