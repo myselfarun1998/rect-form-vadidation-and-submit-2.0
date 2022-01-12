@@ -10,3 +10,28 @@ p {
   background-color: cornsilk;
   border-radius: 12px;
 }
+input {
+  margin-left: 20px;
+  margin-top: 10px;
+  display: inline;
+  border-color: green;
+  border: 1px solid blue;
+  border-radius: 20px;
+  padding-left: 20px;
+  padding-bottom: 10px;
+}
+input-text {
+  padding-right: 120px;
+  background-color: beige;
+}
+button {
+  margin-top: 10px;
+  background-color: rgba(17, 209, 49, 0.658);
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+  padding: 5px 10px;
+  color: black;
+  border: none;
+}
+.txt {
+  margin-left: 35px;
+}
