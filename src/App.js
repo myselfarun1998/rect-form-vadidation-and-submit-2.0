@@ -17,6 +17,7 @@ export default class App extends React.Component {
         age: '',
       },
     };
+    show:false
   }
   onChange = (e) => {
     this.setState((prev) => {
@@ -64,8 +65,25 @@ export default class App extends React.Component {
     this.setState((prev) => {
       return { ...prev, show: { ...prev.store } };
     });
+    this.setState({
+      store: {
+        name: '',
+        city: '',
+        phone: '',
+        age: '',
+      },
+    });
   };
-
+  onreset = () => {
+    this.setState({
+      show: {
+        name: '',
+        city: '',
+        phone: '',
+        age: '',
+      },
+    });
+  };
   render() {
     const { name, city } = this.state;
     return (
@@ -108,6 +126,7 @@ export default class App extends React.Component {
           <p>Phone: {this.state.show.phone}</p>
           <p>city: {this.state.show.city}</p>
           <p>Age: {this.state.show.age}</p>
+          <button onClick={this.onreset}>reset</button>
         </div>
       </>
     );
